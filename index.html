@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureGreenEnergies Pty (Ltd)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #1b5e20;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    #hero {
+      background: url('images/hero.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    #hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* overlay */
+    }
+
+    #hero div {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    #hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    #hero a {
+      background: #1b5e20;
+      padding: 0.8rem 1.5rem;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #1b5e20;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.1rem;
+    }
+
+    /* Products */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .product {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #1b5e20;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="PureGreenEnergies Logo">
+      <h1>PureGreenEnergies Pty (Ltd)</h1>
+    </div>
+    <nav>
+      <a href="#mission-vision">Mission & Vision</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div>
+      <p>Affordable, Sustainable, Eco-Friendly Energy Solutions</p>
+      <a href="#mission-vision">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section id="mission-vision">
+    <h2>Our Mission</h2>
+    <p>
+      To provide an affordable, sustainable, and eco-friendly diesel alternative that reduces carbon emissions while supporting industries that rely on diesel-powered equipment.
+    </p>
+
+    <h2>Our Vision</h2>
+    <p>
+      To become a leading biodiesel supplier across Africa, particularly in regions facing power shortages, by supplying high-quality biodiesel for diesel generators and industrial use.
+    </p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      PureGreenEnergies is a partnership under a group of investment companies, dedicated to manufacturing and selling biodiesel while also collecting used cooking oil. 
+      The company aims to provide a cheaper, more sustainable, and eco-friendly alternative to traditional diesel.
+    </p>
+    <p>
+      Our primary market includes the mining sector, hospitals, restaurants, and businesses that rely on diesel-powered generators. 
+      With Africa’s ongoing power supply challenges, our long-term vision is to expand biodiesel distribution across the continent, 
+      providing a stable energy solution.
+    </p>
+    <p>
+      PureGreenEnergies differentiates itself with competitive pricing, sustainability certifications, 
+      and strong partnerships with industries and restaurants.
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <h3>B100 Biodiesel</h3>
+        <p>100% pure biodiesel, a sustainable replacement for fossil diesel.</p>
+      </div>
+      <div class="product">
+        <h3>B50 Biodiesel</h3>
+        <p>50% biodiesel blend, balancing performance and eco-friendliness.</p>
+      </div>
+      <div class="product">
+        <img src="images/stove.png" alt="Air Flow Biodiesel Stove">
+        <h3>Air Flow Biodiesel Stove (Coming Soon)</h3>
+        <p><small>Patent Pending – Patent No. 2025/06896</small></p>
+        <p>
+          Introducing the future of green cooking: the Air Flow Stove, powered by biodiesel. 
+          This clean, sustainable, and odorless fuel is made from recycled cooking oil. 
+          Affordable and safe, it produces no harmful fumes, making it an eco-friendly alternative 
+          for households and businesses alike.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +27 67 239 6080</p>
+    <p><strong>Locations:</strong> Johannesburg, South Africa & Harare, Zimbabwe</p>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PureGreenEnergies Pty (Ltd). All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
