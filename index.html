@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureGreenEnergies Pty (Ltd)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    header {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #1b5e20;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .contact-form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      margin-top: 1rem;
+      background: #1b5e20;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #145a16;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PureGreenEnergies Pty (Ltd)</h1>
+    <p>Affordable, sustainable biodiesel for Africa</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      PureGreenEnergies Pty (Ltd) is a Zimbabwean–South African partnership
+      focused on providing affordable, sustainable biodiesel across Africa.
+      We collect used cooking oil, refine it into biodiesel, and supply
+      businesses that rely on diesel-powered generators, such as hospitals,
+      mines, and restaurants. Our mission is to offer cleaner, cost-effective
+      energy solutions while promoting environmental responsibility.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="product">
+      <h3>B100 Biodiesel</h3>
+      <p>High-quality, sustainable biodiesel available for bulk delivery and fleet fueling.</p>
+    </div>
+    <div class="product">
+      <h3>Biodiesel Air Flow Stove</h3>
+      <p>Our innovative biodiesel-powered stove designed for efficient, clean cooking.</p>
+      <img src="https://via.placeholder.com/400x300.png?text=Air+Flow+Stove" alt="Air Flow Stove">
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <p><strong>Email:</strong> muziwandiledlamini75@gmail.com<br>
+       <strong>Phone:</strong> +27 67 239 6080<br>
+       <strong>Locations:</strong> Johannesburg & Harare</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PureGreenEnergies Pty (Ltd). All rights reserved.</p>
+  </footer>
+</body>
+  </html>
